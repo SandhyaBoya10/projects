@@ -1,0 +1,196 @@
+
+* {
+    margin: auto;
+    
+}
+.s {
+    background-color: mediumblue;
+    color: white;
+    width: 100%;
+}
+.dh{
+    text-align: center;
+    text-decoration: underline;
+    color: blueviolet;
+}
+
+#a {
+    width: 1000px;
+    margin-left: 200px;
+    font-size: 20px;
+}
+.N {
+    width: 5px;
+    background-color: white;
+    color: red;
+    }
+.d {
+    padding: 10px;
+    margin-left: 55px;
+
+}
+nav {
+    float: right;
+    /* margin-left: 30px; */
+}
+a:link {
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+}
+/* #con {
+   background-color: aliceblue;
+} */
+.recent {
+    display: inline-block;
+    background-color: white;
+    padding: 20px;
+}
+
+.m {
+    float: left;
+}
+.kl{
+    margin-left: 120px; 
+    padding-top: 80px;
+}
+#ya{
+    width: 30%;
+    background-color: white;
+    display: inline-grid;
+}
+.h{
+    
+    /* padding: 100px; 
+    background-color: aliceblue;
+    text-align: center;
+    /* width: 100%; */
+     margin-left: 120px; 
+     /* justify-content: space-between; */
+}
+#y{
+    display:inline-grid;
+    background-color: whitesmoke;
+    width: 30%;
+    justify-content: space-between;
+}
+h3 {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    width: 93%;
+    padding: 10px;
+    font-weight: bold;
+}
+#r {
+    color: red;
+}
+.su {
+    float: right;
+    width: 400px;
+}
+#v{
+    margin-left: 60px;
+}
+.v {
+    padding: 100px;
+    background-color: whitesmoke;
+}
+.say{
+    padding-top: 40px;
+}
+.k{
+    padding: 50px;
+    width: 92%;
+}
+#va{
+    margin-left: 120px;
+    padding-top: 70px;
+}
+#clg{
+    display: inline-grid;
+    width: 30%;
+    background-color: rgb(243, 234, 234);
+    /* justify-content: space-between; */
+}
+#lg{
+    display:inline-grid;
+    width: 30%;
+    background-color: white;
+}
+#se {
+    padding: 20px;
+    /* margin-top: 200px; */
+}
+#sv {
+    padding: 5px;
+    color: #2FA5EB;
+}
+/* #more {
+    text-decoration: underline;
+  
+} */
+.nu {
+    color: red;
+    font-size: 20px;
+}
+#san{
+    margin-left: 60px;
+}
+#en {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.ov {
+    width: 30%;
+    display: inline-block;
+    border:solid  #2FA5EB;
+    border-radius: 10px;
+   /* padding-top: 18px;  */
+    background-color: aliceblue;
+    margin: 15px;
+}
+#ma {
+    margin-left: 150px;
+}
+#ga{
+    margin-left: 60px;
+    padding-top: 70px;
+    
+}
+#ap {
+    
+    padding: 30px;
+}
+#rating {
+    display: inline-block;
+    padding: 20px;
+    margin-left: 50px;
+}
+#sk {
+    padding: 100px;
+    background-color: aliceblue;
+    
+}
+#mad {
+    display: inline-flex ;
+    width: 23%;
+    padding: 10px;
+}
+#sk {
+    display: inline-flex;
+    width: 23%;
+    padding: 10px;
+}
+#bot {
+    text-align: center;
+    padding: 30px;
+}
+.sticky {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+.new {
+    float: right;
+}
