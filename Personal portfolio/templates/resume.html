@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Resume</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Your Resume</h1>
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">{{ user.username }}</a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="{{ url_for('home') }}" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="{{ url_for('about') }}" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="{{ url_for('project_gallery') }}" class="nav__link">Project Gallery</a></li>
+                    <li class="nav__item"><a href="{{ url_for('resume') }}" class="nav__link">Resume</a></li>
+                    <li class="nav__item"><a href="{{ url_for('contact') }}" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav><br><br><br>
+
+        <div>
+            <h3>Personal Information</h3>
+            <p><strong>First Name:</strong> {{ user.first_name }}</p>
+            <p><strong>Last Name:</strong> {{ user.last_name }}</p>
+            <p><strong>Job Title:</strong> {{ user.job_title }}</p>
+            <p><strong>Description:</strong><br>{{ user.description }}</p>
+            <p><strong>Email:</strong> {{ user.email }}</p>
+            <p><strong>Phone:</strong> {{ user.phone }}</p>
+            <p><strong>Address:</strong> {{ user.address }}</p>
+            <p><strong>Summary:</strong><br>{{ user.summary }}</p>
+        </div>
+
+        <h3>Experience</h3>
+        <div>
+            {% for exp in experiences %}
+                <div class="experience-item">
+                    <p><strong>Title:</strong> {{ exp.title }}</p>
+                    <p><strong>Company:</strong> {{ exp.company }}</p>
+                    <p><strong>Start Date:</strong> {{ exp.start_date }}</p>
+                    <p><strong>End Date:</strong> {{ exp.end_date }}</p>
+                    <p><strong>Description:</strong><br>{{ exp.description }}</p>
+                </div>
+            {% endfor %}
+        </div>
+
+        <h3>Education</h3>
+        <div>
+            {% for edu in education %}
+                <div class="education-item">
+                    <p><strong>School:</strong> {{ edu.school }}</p>
+                    <p><strong>Degree:</strong> {{ edu.degree }}</p>
+                    <p><strong>Start Date:</strong> {{ edu.start_date }}</p>
+                    <p><strong>End Date:</strong> {{ edu.end_date }}</p>
+                    <p><strong>Description:</strong><br>{{ edu.description }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <footer class="footer">
+        <p class="footer__title">{{ user.username }}</p>
+        
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">{{ user.username }}</a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="{{ url_for('home') }}" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="{{ url_for('about') }}" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="{{ url_for('projects') }}" class="nav__link">Project Gallery</a></li>
+                    <li class="nav__item"><a href="{{ url_for('resume') }}" class="nav__link">Resume</a></li>
+                    <li class="nav__item"><a href="{{ url_for('contact') }}" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav><br><br><br>
+
+
+
+        <div>
+            <h3>Personal Information</h3>
+            <p><strong>First Name:</strong> Sandhya Rani</p>
+            <p><strong>Last Name:</strong> Boya</p>
+            <!-- <p><strong>Job Title:</strong>Searching for a job </p> -->
+            <!-- <p><strong>Description:</strong><br>{{ user['description'] }}</p> -->
+            <!-- <p><strong>Email:</strong>sandhyaboya30@gmail.com</p>
+            <p><strong>Phone:</strong>+91 9347187910</p>
+            <p><strong>Address:</strong>Anantapur</p> -->
+            <!-- <p><strong>Summary:</strong><br>Recent BSc graduate with a foundation in computer science
+                and hands-on experience in data analytics and web
+                development. Skilled in HTML, CSS, Python, Excel, and MySQL
+                and eager to apply technical skills and knowledge in an entry
+                level position to contribute to the project’s success.</p>
+        </div> -->
+
+        <!-- <h3>Experience</h3> -->
+        <!-- <div> -->
+            <!-- {% for exp in experiences %} -->
+                <!-- <div class="experience-item"> -->
+                    <!-- <p><strong>Title:</strong> {{ exp['title'] }}</p>
+                    <p><strong>Company:</strong> {{ exp['company'] }}</p>
+                    <p><strong>Start Date:</strong> {{ exp['start_date'] }}</p>
+                    <p><strong>End Date:</strong> {{ exp['end_date'] }}</p>
+                    <p><strong>Description:</strong><br>{{ exp['description'] }}</p> -->
+                    <!-- <p><strong>Experience:</strong><br>Fresher</p> -->
+
+                <!-- </div> -->
+            <!-- {% endfor %} -->
+        <!-- </div>
+
+        <h3>Education</h3>
+        <div> -->
+            <!-- {% for edu in education %} -->
+                <!-- <div class="education-item">
+                    <p><strong>School:</strong> Ap.Model school</p>
+                    <p><strong>Degree:</strong> SSBN Degree college</p>
+                    <p><strong>Start Date:</strong>2021 </p>
+                    <p><strong>End Date:</strong> 2024</p>
+                    
+                </div> -->
+            <!-- {% endfor %} -->
+        <!-- </div>
+    </div>
+    <footer class="footer">
+        <p class="footer__title">{{ user.username }}</p>
+        
+    </footer>
+
+    <script>
+        function addExperience() {
+            var container = document.getElementById('experience-container');
+            var experienceDiv = document.createElement('div');
+            experienceDiv.className = 'experience-entry';
+
+            var count = container.getElementsByClassName('experience-entry').length + 1;
+
+            var jobTitleLabel = document.createElement('label');
+            jobTitleLabel.textContent = 'Job Title:';
+            experienceDiv.appendChild(jobTitleLabel);
+
+            var jobTitleInput = document.createElement('input');
+            jobTitleInput.type = 'text';
+            jobTitleInput.name = 'job_title_' + count;
+            experienceDiv.appendChild(jobTitleInput);
+
+            var companyLabel = document.createElement('label');
+            companyLabel.textContent = 'Company:';
+            experienceDiv.appendChild(companyLabel);
+
+            var companyInput = document.createElement('input');
+            companyInput.type = 'text';
+            companyInput.name = 'company_' + count;
+            experienceDiv.appendChild(companyInput);
+
+            var durationLabel = document.createElement('label');
+            durationLabel.textContent = 'Duration:';
+            experienceDiv.appendChild(durationLabel);
+
+            var durationInput = document.createElement('input');
+            durationInput.type = 'text';
+            durationInput.name = 'duration_' + count;
+            experienceDiv.appendChild(durationInput);
+
+            var descriptionLabel = document.createElement('label');
+            descriptionLabel.textContent = 'Description:';
+            experienceDiv.appendChild(descriptionLabel);
+
+            var descriptionInput = document.createElement('textarea');
+            descriptionInput.name = 'description_' + count;
+            experienceDiv.appendChild(descriptionInput);
+
+            var removeButton = document.createElement('button');
+            removeButton.type = 'button';
+            removeButton.textContent = 'Remove';
+            removeButton.onclick = function() {
+                container.removeChild(experienceDiv);
+            };
+            experienceDiv.appendChild(removeButton);
+
+            container.appendChild(experienceDiv);
+        }
+    </script>
+</form>
+</body>
+</html>
+                                    

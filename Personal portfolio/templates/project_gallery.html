@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../static/style.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website/title>
+    </head>
+    <body>
+          <!--===== HEADER =====-->
+          <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">{{ user.username }}</a>
+                </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="{{ url_for('home') }}" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="{{ url_for('about') }}" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="{{ url_for('project_gallery_u') }}" class="nav__link">project_gallery</a></li>
+                        <li class="nav__item"><a href="{{ url_for('resume') }}" class="nav__link">Resume</a></li>
+                        <li class="nav__item"><a href="{{ url_for('contact') }}" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="l-main">
+<!--===== WORK =====-->
+<section class="work section" id="work">
+    
+    <div class="work__container bd-grid">
+        <!-- {{ project.title }}<br>
+        <a href="" class="work_img"><img src="{{ project.image_url }}" class="img-fluid" alt="{{ project.title }}">
+        <p>{{ project.description }}</p>
+        <p><strong>Technologies Used:</strong> {{ project.technologies }}</p>
+        <a href="{{ project.project_url }}" class="btn btn-primary">Live Project</a>
+       <a href="{{ project.source_url }}" class="btn btn-secondary">Source Code</a>
+    </a> -->
+        <a href="" class="work__img">
+        <img src="../static/images/cyber.png" alt=""><br>
+        cyber-gadgets<br><br>
+        <p><strong>Technologies Used:</strong> HTML,CSS,Database</p><br>
+        <!-- <a href="file:///C:/Users/Sandhya%20Rani/OneDrive/Desktop/SANDHYA_MITRAZ/HTML/html_css/cybergadgets/index.html" class="btn btn-primary">Live Project</a>
+ <br><br> -->
+        <!-- <a href="C:\Users\Sandhya Rani\OneDrive\Desktop\SANDHYA_MITRAZ\HTML\html_css" class="btn btn-secondary">Source Code</a> --> 
+
+        </a>
+        <a href="" class="work__img">
+            <img src="../static/images/Screenshot 2024-07-14 090109.png" alt="">,<br>
+            
+            Hospital <br><br>
+            <p><strong>Technologies Used:</strong> HTML,CSS,Database,Flask-python
+            </p>
+
+        </a>
+
+        
+        <a href="" class="work__img">
+            <img src="../static/images/Screenshot 2024-07-14 090317.png" alt=""><br>
+            College website<br><br>
+        <p><strong>Technologies Used:</strong> HTML,CSS</p><br>
+        </a>
+        <a href="" class="work__img">
+            <img src="../static/images/Screenshot 2024-07-14 090616.png" alt=""><br>
+            Portfolio<br><br>
+        <p><strong>Technologies Used:</strong> HTML,CSS,Database</p><br>
+        </a>
+    </div>
+</section>
+    </main>
+<footer class="footer">
+    <p class="footer__title">{{ user.username }}</p>
+    
+    
+</footer>
+
+
+<!--===== SCROLL REVEAL =====-->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!--===== MAIN JS =====-->
+<script src="../static/js/script.js"></script>
+</body>
+</html>
+

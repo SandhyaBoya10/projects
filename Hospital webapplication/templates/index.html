@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Hospital</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+<body>
+    <div class="s" >
+        <h3> ContactUs +91 9475638936/01|suh@hospital.com</h3>
+
+    </div>
+    <div class="dh">
+        <table class="sa">
+            <tr>
+                <td width="350px" class="aw"><span class="an">Super</span> Hospital</td>
+                <td>
+                    <br><br>
+                    <nav>        
+                        <a href="{{url_for('index')}}">Home</a>
+                        <a href="{{url_for('about')}}">About Us</a>
+                        <a href="{{url_for('service')}}">Services</a>
+                        <a href="{{url_for('doctor')}}">Doctors</a>
+                        <a href="{{url_for('contact')}}">Contact Us</a>
+                        <a href="{{url_for('dashboard')}}">Dashboard</a>
+                    </nav>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="ya">
+    <div class="sn" >
+        <div class="se">
+            <h2 class="su">Health care service</h2>
+            <p class="la">We ca about your health</p>
+    </div>
+</div >
+</div><br>
+        <div class="vk">
+         <div class="k">  
+         <p class="p1">we are medical center</p>
+           <h2>we have a  plan options for you</h2>
+          <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Magnam eos hic, molestias, sint corrupti sunt eligendi 
+            eius unde aspernatur commodi asperiores est! Sequi tempore
+             placeat vero, in velit pariatur.
+          </p>
+            <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Ad blanditiis obcaecati sapiente esse ea asperiores praesentium?
+             Provident dolorum, voluptatum, ipsum ea accusamus sapiente nemo 
+             consectetur mollitia repellendus dolore dignissimos non?</p><br>
+             <li class="sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li class="sm"> Eaque, earum voluptates. Accusantium consequuntur, eos</li>
+            <li class="sm">asperiores in nam voluptatibus eveniet aperiam? Aliquid</li> 
+            <li class="sm">illum tempore quam nihil at, voluptatem corrupti odit repellat.</li></div>
+        </div><br>
+        <div class="so">
+        <b class="gt">Make an Appoinment</b>
+
+        <form action="{{ url_for('display') }}" method="POST">
+            <table class="ra">
+                <tr>
+                    <td>
+                        <input type="text" name="fname" id="fname" placeholder="First name" required>
+                        <label for="fname">First Name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="lname" id="lname" placeholder="Last name" required>
+                        <label for="lname">Last Name</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                        <label for="email">Email</label>
+                    </td>
+                    <td>
+                        <input type="tel" name="mobile" id="mobile" placeholder="Mobile number" required>
+                        <label for="mobile">Mobile Number</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="gender" id="gender" class="na" required>
+                            <option value="">Sex</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                        <label for="gender">Gender</label>
+                    </td>
+                    <td>
+                        <input type="date" name="date" id="date" placeholder="Appointment Date" required>
+                        <label for="date"> Date</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea name="description" id="description" rows="3" cols="80" placeholder="description"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit" class="wn">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        
+    </div>
+    </div> 
+         <footer>
+            <div class="va">
+                <h6><span class="spa">&#169</span>Super Hospital,site designed & developed by  MITRAZ</h6> </div>
+        </footer>
+
+    </div>
+
+
+   
+</body>
+</html>

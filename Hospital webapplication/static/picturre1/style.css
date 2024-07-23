@@ -1,0 +1,380 @@
+/* body{
+    overflow-x: hidden;
+ } */
+ /* *{
+    margin: auto;
+    padding: auto;
+ } */
+ .s{
+         padding-right:250px;
+       padding-top: 0;
+       padding: 5px;
+      
+      background-color:#2fa5eb ;
+      }
+      h3{
+         color: white;
+         padding-left: 830px;
+      }
+      .an{ 
+         color:#2fa5eb;
+         font-size: 50px; 
+         font-family: forte;
+        } 
+      .aw{ 
+          font-family: forte;
+          font-size:40px;
+ 
+       }
+        nav{
+         
+         margin-left:150px ;
+        }
+        .sa{
+         width: 1100px;
+         background-color: transparent;
+          
+         /* border-bottom: 2px solid rgb(221,216,216); */
+        
+         /* margin: 0 auto; */
+        
+ 
+        }
+        .dh{
+          border-bottom:1px  solid rgb(188, 179, 179) ;
+          position: -webkit-sticky;
+         position: sticky;
+         z-index: 1;
+         top: 0;
+         padding: 3px;
+        }
+        .fg{
+          margin-left: 500px;
+        }
+        a{
+         margin-left: 40px;
+         font-size: 20px;
+        }
+        h1{
+         font-family: forte;
+         margin-left: 150px;
+         font-size: 40px;
+        }
+        a:hover{
+         color: coral;
+         
+        }
+        
+        a:link{
+         text-decoration: none;
+         color: rgb(150, 5, 240);
+        }
+        .sn{
+          background: url(../picturre1/a.jpg);
+
+          
+          width: 1100px;
+          height: 400px;
+           /* margin-left: 90px; */
+          /* margin-right: 85px; */
+         
+          border-bottom: 1px solid rgb(218, 208, 208);
+        }
+        .se{
+          background-color: black;
+          opacity: 0.2;
+          width: 900px;
+          height: 350px;
+          /* margin-left:100px ;
+          margin-right: 100px; */
+          border: 1px solid rgb(218,216,216);
+          padding-top: 0px;  
+        }
+        .ya{
+          border-bottom: 1px solid rgb(218, 208, 208);
+        }
+        .su{
+          position: relative;
+          bottom: -150px;
+          color: white;
+          font-size: 40px;
+          font-style: italic;
+          margin-left: 20px;
+          
+        }
+        .la{
+          color:white;
+          font-size: 30px;
+          position: relative;
+          bottom: -160px;
+          font-weight: 20px;
+          margin-left:20px ;
+        }
+       .vk{
+         
+       margin-left: 20px;
+       border-bottom: 1px solid rgb(225, 216, 216);
+       padding: 50px;    
+     }
+  
+ .k{
+    margin-right: 300px;
+    margin-left: 50px;
+    padding: 3px;
+    
+ }
+ .sm{
+    margin-left: 10px;
+    color:black;
+ }
+ 
+ .p1{
+    font-size: 20px;
+    font-style: forte;
+    margin-left: 8px;
+    /* padding: 8px; */
+    color:black;
+ }
+ 
+ li{
+    font-size: 20px;
+ }
+ h2{
+ 
+   padding: 5px;
+ }
+ 
+ b{
+    font-size: 30px;
+    font-family: forte;
+    margin-left: 500px;
+ }
+ .ra,.ra th,.ra td{
+    padding: 15px;
+    
+    width: 300px; margin-left: 550px;
+ }
+ input, textarea{
+    font-size: 20px;
+    border: 2px solid black;
+ }
+ select{
+    border:2px solid black;
+    border-radius: 3px;
+    width: 250px;
+    height: 30px;
+ }
+ textarea{
+    width: 550px;
+    height:40px;
+ }
+ .wn:hover{
+   background-color: rgb(102, 169, 196);
+   
+ }
+ .wn{
+    width: 550px;
+    height: 40px;
+ 
+ }
+ .va{
+    height: 34px;
+    background-color:#2fa5eb;
+ }
+ h6{
+ font-size: 15px;
+   margin-left:100px;
+   margin-right: 0px;
+  background-color: black;
+  width: 1150px;
+  padding: 8px;
+  color: white;
+ 
+ }
+ .ss {
+    position: relative;
+    float: right;
+    margin-right: 800px;
+    width: 400px; 
+    height: 300px; 
+    display: inline;
+ }
+ 
+ .sr {
+    width: 300px; 
+    height: 230px;
+    margin-right: 280px; 
+   float: right;
+   padding: 5px;
+    border: 1px solid black;
+    padding-right: 20px;
+ }
+ .ni{
+    font-size:20px;
+    font-style: normal;
+    font-weight:lighter;
+    margin-left:50px;
+    color: black;
+ 
+ }
+ .po{
+    background-color: rgb(214, 214, 34);
+    font-size:20px;
+    font-style: normal;
+   font-weight:lighter;
+    color: black;
+ }
+ .gu{
+    
+    margin-left: 60px;
+    width: 50%;
+   
+ }.sl{
+    margin-left: 50px;
+    font-family: normal ;
+    font-size: 25px;
+ }
+ .sc{
+    width: 100%;
+    float: inline-start;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+ }
+  .ja{ 
+    margin-left: 50px;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+ }
+ 
+ .spa{
+    font-size: 20px;
+ }
+ 
+ .as{
+    width: 400px;
+    height: 500px;
+    border: 1px solid white;
+    margin-left: 90px;
+    padding: 10px;
+ }
+ .ad{
+ font-style: normal;
+ margin-left: 20px;
+ font-size: 15px;
+ color: black;
+ font-family: normal;
+ 
+ }
+ .ds{
+    font-style:normal;
+    font-weight: 900px;
+    margin-left: 20px;
+ }
+ .gh{
+    padding: 3px;
+    margin-left: 15px;
+    color: gray;
+    
+ }
+ .jk{
+    width: 100%;
+    float: inline-start;
+    border-bottom: 1px solid white;
+    padding-bottom: 40px;
+    
+    /* margin-left: 40px; */
+    padding:50px;
+    padding-top: 20px;
+    
+ }
+ 
+ .lo{
+    width: 380px ;
+    height:230px;
+    margin-right: 330px;
+    float: right;
+ }
+ #df{
+    border: 2px solid white;
+    border-spacing: 0;
+    /* width: 30%; */
+    margin-left: 70px;
+ }
+  .ed{ 
+    margin-left: 5px;
+    font-size: 30px;
+    padding: 3px;
+    
+ }
+ .ko{
+    color: grey;
+    font-style: 8px;
+ }
+ .em{
+    font-size: 30px;
+    margin-left:0px ;
+    padding: 8px;
+    
+ }
+ .rt{
+    border: 2px solid rgb(224, 219, 219);}
+    
+ h4{
+    margin-left: 130px;
+    font-size: 25px;
+    padding: 3px;
+    
+ }
+ .O{
+    margin-left: 0px;
+    padding: 10px; 
+ }
+ .v{
+    margin-left: 130px;
+    color: grey;
+    font-size: 18px;
+    padding: 3px;
+ }
+ #zx{
+    margin-left: 130px;
+    
+ }
+ .kl{
+    margin-left: 90px;
+    color: grey;
+    padding: 3px;
+    padding: 3px;
+ }
+   
+ .lk{
+    margin-left: 90px;
+    font-style: normal;
+    font-size: 25px;
+    
+    
+ }
+ #vs{
+    padding: 40px;
+ }
+ 
+ .nk{
+    /* margin-left: 150px; */
+    color: grey;
+ }
+ .lg{
+    margin-left: 0px; 
+    font-family: normal;
+    font-weight: 300px;
+   
+    
+ }
+ .ll{
+    /* margin-left: 150px; */
+    color: grey;
+    padding: 15px;
+ }
+ #sp{
+    margin-left: 120px;
+ }
+ 
